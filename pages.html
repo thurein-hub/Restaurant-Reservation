@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reataurant Reservation</title>
+    <link rel="icon" type="images/png" sizes="16x16" href="images/Dinner.png">
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body class="font">
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top scrolling-navbar">
+            <div class="container main">
+                <a href="" class="navbar-brand">
+                    <img src="images/logo.png" class="img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler text-white navbar-dark" data-bs-target="#Collapse" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="Collapse">
+                    <ul class="navbar-nav ms-auto text-uppercase">
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2"><a href="index.html" class="nav-link d-inline-block for_nav">Home</a></li>
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2 dropdown"><a href="" class="nav-link d-inline-block for_nav for_nav_active">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages.html" class="dropdown-item">Gallery</a></li>
+                                <li><a href="our team.html" class="dropdown-item">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2"><a href="about us.html" class="nav-link d-inline-block for_nav">About Us</a></li>
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2"><a href="menu.html" class="nav-link d-inline-block for_nav">Menu</a></li>
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2"><a href="contact.html" class="nav-link d-inline-block for_nav">Contact</a></li>
+                        <li class="nav-item mx-lg-2 last_a"><a href="booknow.html" class="nav-link for_btn px-lg-3 py-lg-2 px-md-2 py-md-2 my-2">Book Now</a></li>
+         
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- Statr Background -->
+
+    <div class="headerOne">
+       <div class="headerTwo"></div>
+        <div class=" container headerThree">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                     <div class="text-white">
+                           <h1 class="font_style">Our Gallery</h1><br>
+                           <p>You can see some meal in our gallery and vist the Menu.</p>
+                             
+                         
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    <!-- end of background -->
+    <!-- Start choosing items -->
+    <div class="gallery py-5">
+        <div class="btn_title text-center">
+            <button id="btn_gallery_one" class="btn_gallery">See All</button>
+            <button id="btn_gallery_two" class="btn_gallery">Dinner</button>
+            <button id="btn_gallery_three" class="btn_gallery">Pizza</button>
+            <button id="btn_gallery_four" class="btn_gallery">Lunch</button>
+        </div>
+        <div class="gallery_item pt-3">
+                <div class="container">
+                    <!-- row-cols-md-3 row-cols-lg-3 py-3 -->
+                    <div class="row">
+                        
+                        <div class="col-md-4 gallery_1 pb-3 px-2">
+                            <div class="boxing">
+                            <img src="images/gallery-1.jpg"  class="img-fluid imageG" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 gallery_2 pb-3 px-2">
+                            <div class="boxing">
+                            <img src="images/gallery-2.jpg"  class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 gallery_3 pb-3 px-2">
+                            <div class="boxing">
+                            <img src="images/gallery-3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    
+                    
+                        
+                        <div class="col-md-4 gallery_4 pb-3 px-2">
+                            <div class="boxing">
+                            <img src="images/gallery-4.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 gallery_5 pb-3 px-2">
+                            <div class="boxing">
+                            <img src="images/gallery-5.jpg"  class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 gallery_6 pb-3 px-2">
+                            <div class="boxing">
+                            <img src="images/gallery-6.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $('#btn_gallery_one').css({"background-color": "#c42704","color": "white"});
+                // $('#btn_gallery_one').css("color", "white");
+
+                $('#btn_gallery_two').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_three, #btn_gallery_four').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_two').css({"background-color": "#c42704", "color": "white"});
+
+                    $('.gallery_1, .gallery_2, .gallery_3').fadeOut();
+                    $('.gallery_4, .gallery_5, .gallery_6').fadeIn();
+
+                })
+
+                $('#btn_gallery_three').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_two, #btn_gallery_four').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_three').css({"background-color": "#c42704", "color": "white"});
+
+                    $('.gallery_1, .gallery_2, .gallery_3, .gallery_4').fadeOut();
+                    $('.gallery_5, .gallery_6').fadeIn();
+
+                })
+
+                $('#btn_gallery_four').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_two, #btn_gallery_three').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_four').css({"background-color": "#c42704", "color": "white"});
+
+                    $('.gallery_2, .gallery_3').fadeOut();
+                    $('.gallery_1, .gallery_4, .gallery_5, .gallery_6').fadeIn();
+
+                })
+
+                $('#btn_gallery_one').click(function(){
+
+                    $('#btn_gallery_two, #btn_gallery_three, #btn_gallery_four').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_one').css({"background-color": "#c42704", "color": "white"});
+
+                    $('.gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5, .gallery_6').fadeIn();
+
+                })
+
+               
+        })
+    </script>
+  <!-- end choosing item -->
+
+    
+    
+    <!-- footer -->
+    <footer>
+        <div class="footer_bg">
+            <div class="footer_process">
+                <div class="container mb-5">
+                    <div class="news_letter">
+                       <div class="row">
+                           <div class="col-md-12 col-lg-7 text-center ">
+                            <span>Subscribe to our news letter</span>
+                           </div>
+                           <div class="col-md-12 col-lg-5 text-md-center">
+                            <input type="text" placeholder="Enter your email address">
+                            <a href=""><i class="fas fa-long-arrow-alt-right arrow_icon" style="color:white"></i></a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 pe-5 py-3">
+                            <img src="images/logo.png" height="50" alt="">
+                            <p  class="pt-5" style="text-align: justify;">Sed ut perspiciatis unde omnis iste natus errorsit volup tatem accusantium doloremque laudantium, totam rem aperiam, consequuntur magni dolores eos qui rationetdolores eos qui rationet..</p>
+                            <a href=""><i class="fab fa-facebook-square px-2"></i></a>
+                            <a href=""><i class="fab fa-twitter-square px-2"></i></a>
+                            <a href=""><i class="fab fa-instagram-square px-2"></i></a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-3">
+                            <h3 class="pb-5 pt-2">Quick Link</h3>
+                            <p><a href="">Home</a></p>
+                            <p><a href="">Gallery</a></p>
+                            <p><a href="">Menu</a></p>
+                            <p><a href="">About us</a></p>
+                            <p><a href="">Contact</a></p>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-3">
+                            <h3 class="pb-5 pt-2">Work Times</h3>
+                            <p>Mon to Fri : 8am - 8pm</p>
+                            <p>Sat : 9am to 4pm</p>
+                            <p>Sun : Closed</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 py-3">
+                            <h3 class="pb-5 pt-2">Community</h3>
+                            <p>Terms of services</p>
+                            <p>Advertise with us</p>
+                            <p>Policy</p>
+                            <p>Help center</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <p class="text-center copyright pt-3">Restaurano all Rights Reserved.Designed By <a href="" class="text-danger">Team ATH</a></p>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

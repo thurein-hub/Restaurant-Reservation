@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reataurant Reservation</title>
+    <link rel="icon" type="images/png" sizes="16x16" href="images/Dinner.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top scrolling-navbar">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <img src="images/logo.png" alt="" class="img-fluid d-block">
+                </a>
+                <button class="navbar-toggler text-white navbar-dark" data-bs-target="#Collapse" data-bs-toggle="collapse"><span class="navbar-toggler-icon navbar-light"></span></button>
+                <div class="collapse navbar-collapse" id="Collapse">
+                    <ul class="navbar-nav ms-auto text-uppercase">
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2"><a href="index.html" class="nav-link d-inline-block for_nav for_nav_active">Home</a></li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2 dropdown"><a href="pages.html" class="nav-link d-inline-block for_nav">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages.html" class="dropdown-item">Gallery</a></li>
+                                <li><a href="our team.html" class="dropdown-item">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2"><a href="about us.html" class="nav-link d-inline-block for_nav">About Us</a></li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2"><a href="menu.html" class="nav-link d-inline-block for_nav">Menu</a></li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2"><a href="contact.html" class="nav-link d-inline-block for_nav">Contact</a></li>
+                        <li class="nav-item mx-lg-2 last_a"><a href="booknow.html" class="nav-link for_btn px-lg-3 py-lg-2 px-md-2 py-md-2 my-2">Book Now</a></li>
+         
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="Carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#Carousel" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="banner_one">
+                        <!-- <div class="overlay_one"></div> -->
+                        <div class="carousel-caption Caption">
+                            <p class="welcome_text">Welcome to</p>
+                            <p class="main_title"><span class="for_dis">The</span> <span style="color: red;">Restaurano</span></p>
+                            <p class="welcome_text_down text-uppercase">We have the glory beginning in Restaurant Business</p>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-caption Caption">
+                        <p class="welcome_text">Welcome to</p>
+                        <p class="main_title">The <span style="color: red;">Restaurano</span></p>
+                        <p class="welcome_text_down text-uppercase">We have the glory beginning in Restaurant Business</p>
+                    </div> -->
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="banner_two">
+                        <!-- <div class="overlay_two"></div> -->
+                        <div class="carousel-caption Caption">
+                            <p class="welcome_text">Welcome to</p>
+                            <p class="main_title"><span class="for_dis">The</span> <span style="color: red;">Restaurano</span></p>
+                            <p class="welcome_text_down text-uppercase">We have the glory beginning in Restaurant Business</p>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-caption Caption">
+                        <p class="welcome_text">Welcome to</p>
+                        <p class="main_title">The <span style="color: red;">Restaurano</span></p>
+                        <p class="welcome_text_down text-uppercase">We have the glory beginning in Restaurant Business</p>
+                    </div> -->
+                </div>
+                <a href="#Carousel" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#Carousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of banner -->
+
+    <!-- jQuery for Banner -->
+    <script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // $('.Caption').hide();
+            $('.Caption').fadeIn(3000);
+            $('.carousel-control-prev').click(function(){
+                
+                $('.Caption').hide();
+                $('.Caption').fadeIn(3000);
+            });
+
+            $('.carousel-control-next').click(function(){
+
+                $('.Caption').hide();
+                $('.Caption').fadeIn(3000);
+            })
+
+        })
+    </script>
+    <!-- End of jQuery for Banner -->
+    
+    
+    <!-- Discover -->
+    <div class="famous py-5 text-center">
+        <h1 class="pt-5">Discover</h1>
+        <h2 class="text-uppercase py-2">Most Famous Restaurant</h2>
+        <img src="images/headding-pattern.png" width="150" alt="">
+        <div class="container py-5 training">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img src="images/Breakfast.png" class="img-fluid" alt="">
+                    <h3 class="py-3">Breakfast</h3>
+                    <p style="text-align: justify;" class="px-2">Breakfast is the first meal of the day eaten after waking up, usually in the morning. The word in English refers to breaking the fasting period of the previous night.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img src="images/Lunch.png" class="img-fluid" alt="">
+                    <h3 class="py-3">Lunch</h3>
+                    <p style="text-align: justify;" class="px-2">an abbreviation for luncheon, is a meal eaten around midday.  During the 20th century, the meaning gradually narrowed to a meal eaten midday. </p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <img src="images/Dinner.png" class="img-fluid" alt="">
+                    <h3 class="py-3">Dinner</h3>
+                    <p style="text-align: justify;" class="px-2">Dinner usually refers to what is in many Western cultures the largest and most formal meal of the day, which some Westerners eat in the evening.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Discover -->
+
+
+    <!-- our story -->
+    <div class="our_story py-4">
+        <div class="container-fluid ps-0">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 story_image pe-0">
+                    <img src="images/our-story.jpg" class="img-fluid d-block story_img" alt="">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 text-center for_story">
+                    <h1>Our Story</h1>
+                    <h2 class="py-2 text-uppercase">The Perfect the life and food</h2>
+                    <img src="images/headding-pattern.png" width="150" alt="">
+                    <p class="py-3" style="text-align: justify;">A food is something that provides nutrients. Nutrients are substances that provide: energy for activity, growth, and all functions of the body such as breathing, digesting food, and keeping warm; materials for the growth and repair of the body, and for keeping the immune system healthy.</p>
+                    <a href="about us.html"><button class="btn_read">Read More</button></a>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- end of our story -->
+
+
+    <script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            // $('.our_story').hide();
+            $('body').scroll(function(){
+                // $('.for_story').hide();
+
+                $('.our_story').hide(5000);
+            })
+        })
+
+
+    </script>
+
+
+    
+    <!-- Reataurant Interior -->
+    <div class="interior_design text-center">
+        <p class="title">Our Restaurant Interior</p>
+        <p class="co_title pt-3">Relax your time with delicious taste in here!</p>
+    </div>
+    <!-- end of reataurant interior -->
+
+
+    <!-- our_menu -->
+    <div class="menu py-5">
+        <div class="text-center">
+            <h1 class="">Our Menu</h1>
+            <h2 class="text-uppercase py-2">Explore Our Some Foods</h2>
+            <img src="images/headding-pattern.png" width="150" alt="">
+        </div>
+
+        <div class="py-5">
+            <div class="container py-3">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/gallery-7.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Merguez Sausage Bread</h3>
+                                    <p class="dollar">$150</p>
+                                    <p class="for_p pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ad eum consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/gallery-2.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Green Goodness Spaghetti</h3>
+                                    <span class="dollar">$288</span>
+                                    <p class="for_p pt-2">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    elit. Officiis ad eum consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/gallery-8.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Microwave Paneer Tikkas</h3>
+                                    <span class="dollar">$155</span>
+                                    <p class="for_p pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ad eum consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/gallery-1.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Paleo Stuffed Cabbage</h3>
+                                    <span class="dollar">$980</span>
+                                    <p class="for_p pt-2">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    elit. Officiis ad eum consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/gallery-7.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Seasame Chicken Salad</h3>
+                                    <span class="dollar">$150</span>
+                                    <p class="for_p pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ad eum consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/gallery-7.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Bhuna Masala Chicken Wings</h3>
+                                    <span class="dollar">$150</span>
+                                    <p class="for_p pt-2">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    elit. Officiis ad eum consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of menu -->
+
+        
+  
+    <!-- footer -->
+    <footer>
+        <div class="footer_bg">
+            <div class="footer_process">
+                <div class="container mb-5">
+                    <div class="news_letter">
+                       <div class="row">
+                           <div class="col-md-12 col-lg-6 col-sm-12 text-center">
+                            <span>Subscribe to our news letter</span>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-sm-12 text-md-center text-sm-center">
+                            <input type="text" placeholder="Enter your email address">
+                            <a href=""><i class="fas fa-long-arrow-alt-right arrow_icon" style="color:white"></i></a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 pe-5 py-3">
+                            <img src="images/logo.png" height="50" alt="">
+                            <p  class="pt-5" style="text-align: justify;">Sed ut perspiciatis unde omnis iste natus errorsit volup tatem accusantium doloremque laudantium, totam rem aperiam, consequuntur magni dolores eos qui rationetdolores eos qui rationet..</p>
+                            <a href=""><i class="fab fa-facebook-square px-2"></i></a>
+                            <a href=""><i class="fab fa-twitter-square px-2"></i></a>
+                            <a href=""><i class="fab fa-instagram-square px-2"></i></a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-3">
+                            <h3 class="pb-5 pt-2">Quick Link</h3>
+                            <p><a href="index.html">Home</a></p>
+                            <p><a href="">Gallery</a></p>
+                            <p><a href="">Menu</a></p>
+                            <p><a href="">About us</a></p>
+                            <p><a href="">Contact</a></p>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 py-3">
+                            <h3 class="pb-5 pt-2">Work Times</h3>
+                            <p>Mon to Fri : 8am - 8pm</p>
+                            <p>Sat : 9am to 4pm</p>
+                            <p>Sun : Closed</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 py-3">
+                            <h3 class="pb-5 pt-2">Community</h3>
+                            <p>Terms of services</p>
+                            <p>Advertise with us</p>
+                            <p>Policy</p>
+                            <p>Help center</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <p class="text-center copyright pt-3">Restaurano all Rights Reserved.Designed By <a href="" class="text-danger">Team ATH</a></p>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

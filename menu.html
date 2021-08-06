@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<link rel="icon" type="images/png" sizes="16x16" href="images/logo.png">	
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top scrolling-navbar">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <img src="images/logo.png" alt="" class="img-fluid d-block">
+                </a>
+                <button class="navbar-toggler text-white navbar-dark" data-bs-target="#Collapse" data-bs-toggle="collapse"><span class="navbar-toggler-icon navbar-light"></span></button>
+                <div class="collapse navbar-collapse" id="Collapse">
+                    <ul class="navbar-nav ms-auto text-uppercase">
+                        <li class="nav-item mx-lg-2  mt-lg-3 mt-md-2"><a href="index.html" class="nav-link d-inline-block for_nav ">Home</a></li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2 dropdown"><a href="pages.html" class="nav-link d-inline-block for_nav">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pages.html" class="dropdown-item">Gallery</a></li>
+                                <li><a href="our team.html" class="dropdown-item">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2"><a href="about us.html" class="nav-link d-inline-block for_nav">About Us</a></li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2"><a href="menu.html" class="nav-link d-inline-block for_nav for_nav_active">Menu</a></li>
+                        <li class="nav-item mx-lg-2 mt-lg-3 mt-md-2"><a href="contact.html" class="nav-link d-inline-block for_nav">Contact</a></li>
+                        <li class="nav-item mx-lg-2 last_a"><a href="booknow.html" class="nav-link for_btn px-lg-3 py-lg-2 px-md-2 py-md-2 my-2">Book Now</a></li>
+         
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of header -->
+
+
+
+     <!-- banner -->
+    <div class="banner">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="Carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#Carousel" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="banner_three">
+                        <!-- <div class="overlay_one"></div> -->
+                        <div class="carousel-caption Caption">
+                            <p class="welcome_text">Welcome to</p>
+                            <p class="main_title">The <span style="color: red;">European</span></p>
+                            <p class="welcome_text_down text-uppercase">We have the special menu for You</p>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-caption Caption">
+                        <p class="welcome_text">Welcome to</p>
+                        <p class="main_title">The <span style="color: red;">Restaurano</span></p>
+                        <p class="welcome_text_down text-uppercase">We have the glory beginning in Restaurant Business</p>
+                    </div> -->
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="banner_four">
+                        <!-- <div class="overlay_two"></div> -->
+                        <div class="carousel-caption Caption">
+                            <p class="welcome_text">Welcome to</p>
+                            <p class="main_title">The <span style="color: red;">European</span></p>
+                            <p class="welcome_text_down text-uppercase">We have the special menu for You</p>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-caption Caption">
+                        <p class="welcome_text">Welcome to</p>
+                        <p class="main_title">The <span style="color: red;">Restaurano</span></p>
+                        <p class="welcome_text_down text-uppercase">We have the glory beginning in Restaurant Business</p>
+                    </div> -->
+                </div>
+                <a href="#Carousel" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#Carousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of banner -->
+     
+
+
+
+    <!-- jQuery for Banner -->
+    <script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // $('.Caption').hide();
+            $('.Caption').fadeIn(3000);
+            $('.carousel-control-prev').click(function(){
+                
+                $('.Caption').hide();
+                $('.Caption').fadeIn(3000);
+            });
+
+            $('.carousel-control-next').click(function(){
+
+                $('.Caption').hide();
+                $('.Caption').fadeIn(3000);
+            })
+
+        })
+    </script>
+    <!-- End of jQuery for Banner -->
+      <!-- our_menu -->
+    <div class="menu py-4">
+        <div class="text-center">
+            <h1 class="">Our Menu</h1>
+            <h2 class="text-uppercase py-2">Explore Our Main Dishes</h2>
+            <img src="images/headding-pattern.png" width="150" alt="">
+        </div>
+
+      <div class="gallery py-5">
+        <div class="btn_title text-center">
+            <button id="btn_gallery_one" class="btn_gallery">All</button>
+            <button id="btn_gallery_two" class="btn_gallery">Breakfast</button>
+            <button id="btn_gallery_three" class="btn_gallery">Lunch</button>
+            <button id="btn_gallery_four" class="btn_gallery">Dinner</button>
+            <button id="btn_gallery_five" class="btn_gallery">Pizza</button>
+            <button id="btn_gallery_six" class="btn_gallery">Dessert</button>
+        </div>
+        <div class="gallery_item pt-3">
+        <div class="">
+            <div class="container py-3">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12  col-lg-6 pt-sm-3 mb-2 gallery_1">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m2.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Bratkartoffeln Germany</h3>
+                                    <p class="dollar">$150</p>
+                                    <p class="for_p pt-2">Pan-fried potatoes are a classic, versatile German dish that is easily adapted with additional ingredients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_2">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m1.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Lutenica Bulgaria</h3>
+                                    <span class="dollar">$288</span>
+                                    <p class="for_p pt-2">A jar of lutenica or lyutenitsa is one of the essential food items in almost every Bulgarian and North Macedonian household. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_3">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m3.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Salată de vinete Romania</h3>
+                                    <span class="dollar">$155</span>
+                                    <p class="for_p pt-2">Salată de vinete is a traditional Romanian summer dish that involves roasting or grilling eggplants until charred, chopping them until they form a smooth purée.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_4">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m4.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Mydia Greece</h3>
+                                    <span class="dollar">$980</span>
+                                    <p class="for_p pt-2">Mydia or dagnje na crvenu buzaru is a popular Greek and Croatian appetizer consisting of fresh mussels that are steamed in red wine .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_5">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m7.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Ciorbă de fasole Romania</h3>
+                                    <span class="dollar">$305</span>
+                                    <p class="for_p pt-2">Ciorbă de fasole is a type of traditional Romanian sour soup made with dry beans and vegetables such as onions, red peppers, parsley root, and celery root. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_6">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m6.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Polpette Italy</h3>
+                                    <span class="dollar">$380</span>
+                                    <p class="for_p pt-2">Polpette is a word denoting Italian meatballs, traditionally consisting of ground beef or veal (and sometimes pork) that is shaped into small balls.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_7">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m0.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Pizza Margherita Italy</h3>
+                                    <span class="dollar">$401</span>
+                                    <p class="for_p pt-2">Pizza Margherita is a delicacy that is literally fit for a queen. In 1889, Queen Margherita of Savoy visited Naples. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_8">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m8.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Pizza alla diavola Italy</h3>
+                                    <span class="dollar">$270</span>
+                                    <p class="for_p pt-2">Diavola is a variety of Italian pizza that is traditionally topped with tomato sauce, mozzarella cheese, spicy salami.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_9">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m9.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Medovik Russia</h3>
+                                    <span class="dollar">$100</span><p class="for_p pt-2">Medovik is a popular Russian layered honey cake consisting of honey-infused, almost biscuit-like sponges that are coated with thin layers of cream.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 pt-sm-3 mb-2 gallery_10">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                                    <img src="images/m10.jpg" class="img-fluid w-75" alt="">
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8 ps-0">
+                                    <h3 class="menu_name float-start">Dalmatinska pašticada Croatia</h3>
+                                    <span class="dollar">$440</span>
+                                    <p class="for_p pt-2">Dalmatinska pašticada is a dish that traveled a long way from ancient Greece and Rome to the Republic of Venice and the tables of noblemen, and it finally settled in Dalmatia </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- end of menu -->
+     <script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $('#btn_gallery_one').css({"background-color": "#c42704","color": "white"});
+                // $('#btn_gallery_one').css("color", "white");
+
+                $('#btn_gallery_two').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_three, #btn_gallery_four ,#btn_gallery_six ,#btn_gallery_five').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_two').css({"background-color": "#c42704", "color": "white"});
+
+                    $('.gallery_1, .gallery_2').fadeIn();
+                    $(' .gallery_3,.gallery_4, .gallery_5, .gallery_6, .gallery_7, .gallery_8, .gallery_9, .gallery_10').fadeOut();
+
+                })
+
+                $('#btn_gallery_three').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_two, #btn_gallery_four,#btn_gallery_five,#btn_gallery_six').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_three').css({"background-color": "#c42704", "color": "white"});
+
+                    $(' .gallery_1,.gallery_2, .gallery_5, .gallery_6, .gallery_7, .gallery_8, .gallery_9, .gallery_10').fadeOut();
+                    $('.gallery_3, .gallery_4').fadeIn();
+
+                })
+
+                $('#btn_gallery_four').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_two, #btn_gallery_three,#btn_gallery_five,#btn_gallery_six').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_four').css({"background-color": "#c42704", "color": "white"});
+
+                    $(' .gallery_3,.gallery_4, .gallery_1, .gallery_2, .gallery_7, .gallery_8, .gallery_9, .gallery_10').fadeOut();
+                    $('.gallery_5, .gallery_6').fadeIn();
+
+                })
+
+                $('#btn_gallery_five').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_two, #btn_gallery_three ,#btn_gallery_four,#btn_gallery_six ').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_five').css({"background-color": "#c42704", "color": "white"});
+
+                    $(' .gallery_3,.gallery_4, .gallery_1, .gallery_2, .gallery_5, .gallery_6, .gallery_9, .gallery_10').fadeOut();
+                    $('.gallery_7, .gallery_8').fadeIn();
+
+                })
+
+                $('#btn_gallery_six').click(function(){
+
+                    $('#btn_gallery_one, #btn_gallery_two, #btn_gallery_three ,#btn_gallery_four ,#btn_gallery_five').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_six').css({"background-color": "#c42704", "color": "white"});
+
+                    $(' .gallery_3,.gallery_4, .gallery_1, .gallery_2, .gallery_7, .gallery_8, .gallery_5, .gallery_6').fadeOut();
+                    $('.gallery_9, .gallery_10').fadeIn();
+
+                })
+
+
+
+                $('#btn_gallery_one').click(function(){
+
+                    $('#btn_gallery_two, #btn_gallery_three, #btn_gallery_four,#btn_gallery_five,#btn_gallery_six').css({"background-color": "#ededed","color": "black"});
+                    $('#btn_gallery_one').css({"background-color": "#c42704", "color": "white"});
+
+                    $('.gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5, .gallery_6,.gallery_7, .gallery_8, .gallery_9, .gallery_10').fadeIn();
+
+                })
+
+               
+        })
+    </script>
+  <!-- end choosing item -->
+
+
+    <!-- Reataurant Interior -->
+    <div class="interior_design text-center">
+        <p class="title">Feel the Pleasure</p>
+        <p class="co_title pt-3">Relax your time with european dishes in here!</p>
+    </div><br><br>
+    <!-- end of reataurant interior -->
+
+    <div class="text-center">
+          
+            <h2 class="text-uppercase py-2">Look other dishes.</h2>
+            <img src="images/headding-pattern.png" width="150" alt="">
+        </div>
+      
+	 <div class="gallery_item pt-3">
+                <div class="container">
+                    <!-- row-cols-md-3 row-cols-lg-3 py-3 -->
+                    <div class="row">
+                        
+                        <div class="col-md-3 gallery_1 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d5.jpg"  class="img-fluid imageG" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 gallery_2 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d1.jpg"  class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 gallery_3 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    
+                    
+                        
+                        <div class="col-md-3 gallery_4 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 gallery_5 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d4.jpg"  class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 gallery_5 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d6.jpg"  class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 gallery_5 pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/d8.jpg"  class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 gallery_6  pb-2 px-1">
+                            <div class="boxing">
+                            <img src="images/m5.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <div class="footer_bg my-5">
+            <div class="footer_process">
+                <div class="container mb-5">
+                    <div class="news_letter">
+                       <div class="row">
+                           <div class="col-md-12 col-lg-5 col-sm-12 text-center">
+                            <span>Subscribe to our news letter</span>
+                           </div>
+                           <div class="col-md-12 col-lg-5 col-sm-12 text-md-center">
+                            <input type="text" placeholder="Enter your email address">
+                            <a href=""><i class="fas fa-long-arrow-alt-right arrow_icon" style="color:white"></i></a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 pe-5 py-3">
+                            <img src="images/logo.png" height="50" alt="">
+                            <p  class="pt-5" style="text-align: justify;">Sed ut perspiciatis unde omnis iste natus errorsit volup tatem accusantium doloremque laudantium, totam rem aperiam, consequuntur magni dolores eos qui rationetdolores eos qui rationet..</p>
+                            <a href=""><i class="fab fa-facebook-square px-2"></i></a>
+                            <a href=""><i class="fab fa-twitter-square px-2"></i></a>
+                            <a href=""><i class="fab fa-instagram-square px-2"></i></a>
+                        </div>
+                        <div class="col-12 col-md-3 py-3">
+                            <h3 class="pb-5 pt-2">Quick Link</h3>
+                            <p><a href="">Home</a></p>
+                            <p><a href="">Gallery</a></p>
+                            <p><a href="">Menu</a></p>
+                            <p><a href="">About us</a></p>
+                            <p><a href="">Contact</a></p>
+
+                        </div>
+                        <div class="col-12 col-md-3 py-3">
+                            <h3 class="pb-5 pt-2">Work Times</h3>
+                            <p>Mon to Fri : 8am - 8pm</p>
+                            <p>Sat : 9am to 4pm</p>
+                            <p>Sun : Closed</p>
+                        </div>
+                        <div class="col-12 col-md-2 py-3">
+                            <h3 class="pb-5 pt-2">Community</h3>
+                            <p>Terms of services</p>
+                            <p>Advertise with us</p>
+                            <p>Policy</p>
+                            <p>Help center</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <p class="text-center copyright pt-3">Restaurano all Rights Reserved.Designed By <a href="" class="text-danger">Team ATH</a></p>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
